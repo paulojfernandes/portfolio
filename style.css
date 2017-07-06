@@ -1,9 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
 html, body {
   height: 100%;
-
   font-family: 'Quicksand', sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 .b-a, .bar, .bar:before, .bar:after {
@@ -127,17 +127,19 @@ p {
 
 #intro {
   line-height: 10px;
-  background-color:rgb(40, 54, 86);
-   height: 100vh;
-    
+  background: url(img/tec.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*height: 100vh;*/
 }
-
 
 #intro h1 {
   padding-top: 10%
 }
 
-#intro h2{
+#intro h2 {
   color: white;
   line-height: 200%;
   font-size: 3em;
@@ -151,20 +153,137 @@ p {
   padding-left: 20%
 }
 
-#portfolio {
-  background-color: #1e1f26
-}
-
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  width: 100%;
+.row.year button {
   margin: auto;
-  height: 27%
-}
-#contacto{
-background-color: #4d648d;
+  display: block;
+  background-color: snow;
+  color: black;
+  vertical-align: bottom;
 }
 
-a{
-  color:lightseagreen
+.row.year button:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
 }
-  
+
+
+/*#portfolio {
+  background-color: #222930
+}*/
+
+#ano1 {
+  background-color: #ab987a
+}
+
+#ano2 {
+  background-color: #30415d
+}
+
+#ano3 {
+  background-color: #0f1626
+}
+
+#skills {
+  background-color: #ff533d
+}
+
+
+
+#contacto {
+  background-color: #222930;
+}
+
+a {
+  color: white
+}
+
+#project {
+  background-color: white;
+  color: black;
+  margin-top: 15px;
+  margin-right: 15px;
+  border-radius: 25px;
+  width: 350px;
+  height: 400px;
+}
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0);
+  /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(2.5, 2.5);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+/* Portrait and Landscape */
+
+@media only screen and (max-device-width: 767px) {
+  #intro {
+    height: 40vh;
+  }
+  #project {
+    margin-left: 22%;
+  }
+  .gallery {
+    width: 580px;
+    margin: 0 auto;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  }
+  .gallery > div {
+    position: relative;
+    float: left;
+    padding: 5px;
+  }
+  .gallery > div > img {
+    display: block;
+    width: 170px;
+    transition: .1s transform;
+    transform: translateZ(0);
+    /* hack */
+  }
+}
+
+@media only screen and (min-device-width: 1280px) {
+  #intro {
+    height: 100vh;
+  }
+}
