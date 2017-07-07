@@ -1,12 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
-html, body {
+html,
+body {
   height: 100%;
   font-family: 'Quicksand', sans-serif;
   color: white;
   overflow-x: hidden;
 }
 
-.b-a, .bar, .bar:before, .bar:after {
+.b-a,
+.bar,
+.bar:before,
+.bar:after {
   transition: all .25s;
   content: "";
   position: absolute;
@@ -48,7 +52,9 @@ html, body {
   top: 8px;
 }
 
-.b-a-expanded, .menu-expanded .bar:before, .menu-expanded .bar:after {
+.b-a-expanded,
+.menu-expanded .bar:before,
+.menu-expanded .bar:after {
   transition: all .25s;
   top: -0px;
 }
@@ -105,8 +111,8 @@ html, body {
 
 .row {
   padding-top: 10px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 14%;
+  padding-right: 13%;
   padding-bottom: 10px;
 }
 
@@ -117,6 +123,10 @@ h1 {
 
 h3 {
   color: #999;
+}
+
+h4 {
+  font-weight: bold
 }
 
 p {
@@ -170,6 +180,13 @@ p {
 }
 
 
+/*
+.container-fluid {
+  width: 80vw;
+  margin-left: -10%;
+}*/
+
+
 /*#portfolio {
   background-color: #222930
 }*/
@@ -189,8 +206,6 @@ p {
 #skills {
   background-color: #ff533d
 }
-
-
 
 #contacto {
   background-color: #222930;
@@ -218,13 +233,13 @@ a {
   box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
 
-.gallery > div {
+.gallery>div {
   position: relative;
   float: left;
   padding: 5px;
 }
 
-.gallery > div > img {
+.gallery>div>img {
   display: block;
   width: 200px;
   transition: .1s transform;
@@ -232,16 +247,17 @@ a {
   /* hack */
 }
 
-.gallery > div:hover {
+.gallery>div:hover {
   z-index: 1;
 }
 
-.gallery > div:hover > img {
+.gallery>div:hover>img {
   transform: scale(2.5, 2.5);
   transition: .3s transform;
 }
 
-.cf:before, .cf:after {
+.cf:before,
+.cf:after {
   display: table;
   content: "";
   line-height: 0;
@@ -259,7 +275,7 @@ a {
     height: 40vh;
   }
   #project {
-    margin-left: 22%;
+    margin-left: 27%;
   }
   .gallery {
     width: 580px;
@@ -268,17 +284,31 @@ a {
     background: #fff;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
   }
-  .gallery > div {
+  .gallery>div {
     position: relative;
     float: left;
     padding: 5px;
   }
-  .gallery > div > img {
+  .gallery>div>img {
     display: block;
     width: 170px;
     transition: .1s transform;
     transform: translateZ(0);
     /* hack */
+  }
+  #intro h3 {
+    line-height: 100%;
+    /*padding-left: 20%*/
+  }
+  p {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  #project {
+    height: 450px;
   }
 }
 
