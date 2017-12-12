@@ -21,6 +21,12 @@ body {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
+/*.container {
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}*/
+
 .menu-collapsed {
   transition: all .25s;
   position: fixed;
@@ -224,6 +230,7 @@ a {
   border-radius: 25px;
   width: 350px;
   height: 400px;
+  float: left;
 }
 
 .gallery {
@@ -271,14 +278,14 @@ a {
 
 /* Portrait and Landscape */
 
-@media only screen and (max-device-width: 767px) {
+@media only screen and (max-device-width: 768px) {
   #intro {
     height: 80vh;
   }
   #project {
- 
-    width: auto;
-    height: auto;
+    width: 250px;
+    height: 300px;
+    margin-left:12.5%
   }
   .gallery {
     width: 580px;
@@ -303,6 +310,11 @@ a {
     line-height: 100%;
     font-size: 20px;
     /*padding-left: 20%*/
+  }
+  .container {
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
   /*p {
     font-size: 18px;
